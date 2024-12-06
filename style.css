@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    inset: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    padding-block: 1rem;
+}
+input, button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    letter-spacing: .15rem;
+    background: #191919;
+    color: #f2f2f2;
+    cursor: pointer;;
+    
+    &::placeholder {
+        color: #f2f2f2;
+    }
+}
+
+dialog {
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    img {
+            margin: auto;
+            max-width: 350px;
+        }
+
+
+    .answers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+
+        button {
+            width: 100%;
+            border: none;
+            text-transform: uppercase;
+            inline-size: auto;
+        }
+    }
+
+    #resultContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

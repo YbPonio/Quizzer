@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <dialog id="questionDialog1" open>
+        <h1>Quizzer</h1>
+        <form method="dialog" onsubmit="startQuiz()">
+            <input id="fruitID" type="text" required placeholder="Enter your name:">
+            <input type="submit">
+            <button>Show Result</button>
+        </form>
+    </dialog>
+
+    <dialog id="questionDialog2">
+        <h1>Question # <span id="questionText"></span></h1>
+        <img id="fruitImage" src="" alt="fruit">
+        <div id="answersOption" class="answers">
+        </div>
+    </dialog>
+
+    <dialog id="questionDialog3">
+        <div id="resultContainer">
+            <h1>Result</h1>
+            <h1 id="resultTotal">1 / 10</h1>
+            <button onclick="playAgain()">Play Again</button>
+        </div>
+    </dialog>
+
+
+    <script src="main.js" defer></script>
+</body>
+</html>
