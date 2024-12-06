@@ -61,8 +61,9 @@ function checkAnswer(answer) {
 }
 
 function endQuiz() {
-    resultTotal.innerHTML = `${totalScore} / ${fruits.length}`; 
+    fetch(`http://localhost/quizzer/api/save-fruit.php?name=${fruitID.value}&score=${totalScore}`);
 
+    resultTotal.innerHTML = `${totalScore} / ${fruits.length}`; 
     questionDialog1.close();
     questionDialog2.close();
     questionDialog3.showModal();
