@@ -72,6 +72,7 @@ function endQuiz() {
 function playAgain() {
     questionNumber = -1;
     totalScore = 0;
+    fruitID.value = "";
     questionDialog1.showModal();
     questionDialog2.close();
     questionDialog3.close();
